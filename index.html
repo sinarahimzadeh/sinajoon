@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes">
+    <title>Sina Rahimzadeh | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <!-- The actual game canvas -->
+    <div id="game-container">
+      <canvas id="unity-canvas" tabindex="-1"></canvas>
+    </div>
+
+    <!-- The custom premium loading overlay -->
+    <div id="loading-screen">
+      <div class="glass-card">
+        <h1>Welcome to my portfolio</h1>
+        <p class="instructions">Use arrows, touch screen, or mouse to play</p>
+        
+        <div id="loading-bar-container">
+          <div id="loading-bar-fill"></div>
+        </div>
+        
+        <button id="enter-btn" style="display: none;">Enter Portfolio</button>
+      </div>
+    </div>
+
+    <!-- Load the Unity engine script -->
+    <script src="Build/verynewbuilds.loader.js"></script>
+    <!-- Our custom logic -->
+    <script src="script.js"></script>
+  </body>
+</html>
